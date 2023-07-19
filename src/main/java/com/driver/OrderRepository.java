@@ -42,4 +42,10 @@ public class OrderRepository {
             return orderDb.get(orderId);
         else return null;
     }
+
+    public DeliveryPartner getPartnerById(String partnerId) {
+        if(partnerDb.containsKey(partnerId))
+            return partnerDb.get(partnerId);
+        return null;
+    }
 }

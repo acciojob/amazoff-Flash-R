@@ -22,4 +22,8 @@ public class OrderService {
     public Order getOrderById(String orderId) {
         return orderRepository.getOrderById(orderId);
     }
+
+    public DeliveryPartner getPartnerById(String partnerId) {
+        return orderRepository.getPartnerById(partnerId);
+    }
 }
