@@ -36,4 +36,10 @@ public class OrderRepository {
             unassignedOrders.remove(orderId);
 
     }
+
+    public Order getOrderById(String orderId) {
+        if(orderDb.containsKey(orderId))
+            return orderDb.get(orderId);
+        else return null;
+    }
 }
