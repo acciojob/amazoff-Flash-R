@@ -10,4 +10,12 @@ public class OrderService {
     public void addOrder(Order order) {
         orderRepository.addOrder(order);
     }
+
+    public void addPartner(String partnerId) {
+        orderRepository.addPartner(partnerId);
+    }
+
+    public void addOrderPartnerPair(String orderId, String partnerId) {
+        orderRepository.addOrderPartnerPair(orderId, partnerId);
+    }
 }
