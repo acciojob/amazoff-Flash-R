@@ -38,15 +38,11 @@ public class OrderRepository {
     }
 
     public Order getOrderById(String orderId) {
-        if(orderDb.containsKey(orderId))
-            return orderDb.get(orderId);
-        else return null;
+        return orderDb.get(orderId);
     }
 
     public DeliveryPartner getPartnerById(String partnerId) {
-        if(partnerDb.containsKey(partnerId))
-            return partnerDb.get(partnerId);
-        return null;
+        return partnerDb.get(partnerId);
     }
 
     public Integer getOrderCountByPartnerId(String partnerId) {
